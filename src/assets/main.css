@@ -1,39 +1,40 @@
 /* main.css */
 
 :root {
-  --font-default: Inter, system-ui, sans-serif;
+  --font-default: inter, system-ui, sans-serif;
   --tx-color: #213547;
-  --bg-color: #ffffff;
+  --bg-color: #fff;
+
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: light dark;
-    --tx-color: rgba(255, 255, 255, 0.87);
+    --tx-color: rgb(255 255 255 / 87%);
     --bg-color: #242424;
   }
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: inherit;
 }
 
 body {
+  max-width: 800px;
+  height: 100svh;
+  color: var(--tx-color);
+  font-weight: 400;
   font-family: var(--font-default);
   line-height: 1.5;
-  font-weight: 400;
-  color: var(--tx-color);
   background: var(--bg-color);
-  height: 100svh;
-  max-width: 800px;
   margin-inline: auto;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

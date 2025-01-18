@@ -10,5 +10,21 @@
   },
   "dependencies": {
     "astro": "^5.1.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.7",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-embed": "^0.4.15",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "stylelint": "^16.13.2",
+    "stylelint-config-clean-order": "^7.0.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-order": "^6.0.4",
+    "typescript-eslint": "^8.20.0",
+    "vserv": "^1.0.1"
   }
 }
